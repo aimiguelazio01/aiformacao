@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060814" />
+    <meta
+      name="description"
+      content="MVIRGIL Studio — We design and build AI-powered apps that solve real problems, streamline workflows and create new possibilities."
+    />
+    <title>NEXA — Smarter Ideas, Real Applications · MVIRGIL Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas class="hero__canvas" aria-hidden="true"></canvas>
+        <div class="hero__shade" aria-hidden="true"></div>
+
+        <!-- TOP NAVIGATION BAR -->
+        <header class="site-header">
+          <a class="wordmark" href="#top" aria-label="NEXA home">
+            NEXA
+          </a>
+          <nav aria-label="Main navigation">
+            <a href="#solutions">Solutions</a>
+            <a href="#work">Work</a>
+            <a href="/formacao-ia/">Formação IA</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a class="header-cta" href="#contact">Let's Build <span class="arrow" aria-hidden="true">→</span></a>
+        </header>
+
+        <!-- TWO-COLUMN HERO CONTENT -->
+        <div id="top" class="hero__container">
+          <div class="hero__content">
+            <div class="hero__eyebrow" aria-label="AI Apps">
+              <span>A I</span> &nbsp; <span>A P P S</span>
+            </div>
+
+            <h1 id="hero-title" class="hero__title">
+              Smarter Ideas<br />
+              <span class="hero__highlight">Real Applications</span>
+            </h1>
+
+            <p class="hero__intro">
+              We design and build AI-powered apps that solve real problems, streamline workflows and create new possibilities.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn-primary" href="#contact">
+                Start a Project <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn-ghost" href="#work">
+                See Examples
+              </a>
+            </div>
+
+            <div class="hero__pillars" aria-label="Core Capabilities">
+              <div class="pillar">
+                <span class="pillar__num">01</span>
+                <span class="pillar__label">IDEAS<br />TO APPS</span>
+              </div>
+              <div class="pillar">
+                <span class="pillar__num">02</span>
+                <span class="pillar__label">AI-POWERED<br />SOLUTIONS</span>
+              </div>
+              <div class="pillar">
+                <span class="pillar__num">03</span>
+                <span class="pillar__label">REAL-WORLD<br />IMPACT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM METADATA & SCROLL BAR -->
+        <footer class="hero__bottom-bar">
+          <div class="bottom-brand">
+            <span class="bottom-brand__name">MVIRGIL STUDIO</span>
+            <span class="bottom-brand__tag">CREATIVE TECHNOLOGY</span>
+          </div>
+
+          <div class="bottom-scroll" aria-hidden="true">
+            <div class="scroll-mouse">
+              <span class="scroll-wheel"></span>
+            </div>
+            <span class="scroll-label">SCROLL TO EXPLORE</span>
+          </div>
+
+          <div class="bottom-mission">
+            <span>BUILDING</span>
+            <span>A MORE</span>
+            <span>CREATIVE</span>
+            <span>TOMORROW</span>
+          </div>
+        </footer>
+
+        <!-- INTERACTIVE CONTROLS DOCK -->
+        <div class="hero__dock" role="group" aria-label="Scene controls">
+          <button
+            class="dock-btn"
+            type="button"
+            data-head-toggle
+            aria-pressed="false"
+            aria-label="Enable optional local head tracking. Camera frames stay on this device."
+          >
+            <span class="dock-btn__icon" aria-hidden="true">◎</span> Head View
+          </button>
+          <button class="dock-btn" type="button" data-reset aria-label="Re-center view">
+            Reset
+          </button>
+          <button class="dock-btn dock-btn--quiet" type="button" data-diagnostics aria-pressed="false" aria-label="Toggle camera values">
+            Values
+          </button>
+          <output class="diagnostics" data-readout aria-live="polite" hidden>Camera x 0.00 · y 0.00 · z 0.00</output>
+        </div>
+
+        <p class="hero__status sr-only" data-status role="status">Interactive 3D scene</p>
+        <p class="sr-only">
+          The scene represents AI-powered applications, custom assistants, generation, analytics, automation, and personalisation. Move your mouse or use head tracking to shift your viewpoint.
+        </p>
+        <div class="sr-only" id="solutions">
+          <h2>Our Solutions</h2>
+          <ul>
+            <li>Chat & Assist: Custom AI assistants</li>
+            <li>Generate: Images, Video, 3D</li>
+            <li>Analyse: Turn data into insights</li>
+            <li>Automate: Smarter workflows</li>
+            <li>Personalise: Unique experiences</li>
+          </ul>
+        </div>
+        <div class="sr-only" id="work">Portfolio and client projects</div>
+        <div class="sr-only" id="about">MVIRGIL Studio — Creative Technology</div>
+        <div class="sr-only" id="contact">Get in touch to start an AI project</div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

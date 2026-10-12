@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080d18" />
+    <meta
+      name="description"
+      content="Formação prática e executiva em Inteligência Artificial para empresas. Programas personalizados por setor de atividade, casos práticos verificáveis e conformidade ética."
+    />
+    <meta property="og:title" content="Formação de IA para Empresas — MVIRGIL Studio" />
+    <meta
+      property="og:description"
+      content="Capacitação prática em Inteligência Artificial para empresas: tarefas reais, automação de processos e conformidade ética com supervisão humana."
+    />
+    <meta property="og:type" content="website" />
+    <title>Formação de IA para Empresas — MVIRGIL Studio</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/training/styles.css" />
+  </head>
+  <body class="training-page">
+    <!-- Live Region for Screen Readers -->
+    <div id="a11y-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="MVIRGIL Studio Início">
+        MVIRGIL<span> STUDIO</span>
+      </a>
+      <nav aria-label="Navegação da formação">
+        <a href="#personalizacao">Setores</a>
+        <a href="#processo">Processo</a>
+        <a href="#casos-praticos">Casos Práticos</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#formatos">Formatos</a>
+        <a href="#diagnostico">Diagnóstico</a>
+      </nav>
+      <a class="header-link" href="#diagnostico">Criar Proposta <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <main id="main-content">
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <canvas class="hero__canvas" aria-hidden="true"></canvas>
+        <div class="hero__shade" aria-hidden="true"></div>
+
+        <div class="hero__copy">
+          <p class="eyebrow">
+            <span></span>
+            <span data-hero-eyebrow-text>Formação Prática em Inteligência Artificial para Empresas</span>
+          </p>
+          <h1 id="hero-title" data-hero-title>
+            Capacite a sua equipa com IA prática aplicada aos processos diários.
+          </h1>
+          <p class="hero__intro" data-hero-intro>
+            Formação executiva e prática orientada a resultados mensuráveis: menos tarefas repetitivas, maior rigor operacional e comunicação acelerada.
+          </p>
+          <div>
+            <span class="hero__sector-badge" data-hero-sector-badge>PME & Negócios Gerais</span>
+          </div>
+          <a class="hero__cta" href="#personalizacao">
+            Explorar Setores & Casos <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero__meta" aria-hidden="true">
+          <span>SISTEMA DE FORMAÇÃO EM IA</span>
+          <span>13 SETORES · 13 MÓDULOS</span>
+        </div>
+
+        <div class="hero__controls" role="group" aria-label="Controlos da cena 3D">
+          <button class="control-button" type="button" data-reset-view>Centrar vista</button>
+        </div>
+
+        <p class="hero__status" data-hero-status role="status">Cena 3D interativa</p>
+      </section>
+
+      <!-- SECTOR SELECTOR & CONTEXT BANNER -->
+      <section id="personalizacao" class="t-section" aria-labelledby="context-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Personalização Setorial</span>
+          <h2 id="context-title" class="t-section__title">
+            A sua empresa é diferente. A formação em IA também tem de ser.
+          </h2>
+          <p class="t-section__desc">
+            Selecione o setor de atividade da sua organização para ver conteúdos, desafios, tarefas e recomendações adaptados à sua realidade.
+          </p>
+        </header>
+
+        <!-- Selector Container -->
+        <div class="industry-selector-wrapper" data-industry-selector></div>
+
+        <!-- Dynamic Context Card -->
+        <div class="context-card" data-context-card>
+          <span class="t-section__eyebrow" data-context-sector>PME & Negócios Gerais</span>
+          <p class="t-section__desc" data-context-desc style="margin-top: 8px;">
+            Carregando detalhes do setor...
+          </p>
+
+          <div class="context-card__grid">
+            <div>
+              <h3 style="font-size: 0.88rem; color: #fff; margin: 0 0 8px;">Funções e Perfis Participantes</h3>
+              <ul class="tag-list" data-context-roles></ul>
+            </div>
+            <div>
+              <h3 style="font-size: 0.88rem; color: #fff; margin: 0 0 8px;">Tarefas Operacionais do Quotidiano</h3>
+              <ul class="task-list" data-context-tasks></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4-STEP PROCESS ROADMAP -->
+      <section id="processo" class="t-section" aria-labelledby="process-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Metodologia Comprovada</span>
+          <h2 id="process-title" class="t-section__title">
+            Como desenhamos e executamos a formação
+          </h2>
+          <p class="t-section__desc">
+            Um percurso estruturado em quatro fases para garantir que a equipa aprende com os seus próprios documentos e processos reais.
+          </p>
+        </header>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <span class="process-step__num">Fase 01</span>
+            <h3 class="process-step__title">Diagnóstico Operacional</h3>
+            <p class="process-step__desc">
+              Mapeamento detalhado dos fluxos de trabalho, ferramentas utilizadas e tarefas repetitivas que consomem mais tempo à equipa.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span class="process-step__num">Fase 02</span>
+            <h3 class="process-step__title">Desenho Curricular</h3>
+            <p class="process-step__desc">
+              Seleção dos módulos necessários e criação de exercícios com base nos próprios documentos, minutas e casos reais da empresa.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span class="process-step__num">Fase 03</span>
+            <h3 class="process-step__title">Sessões Práticas</h3>
+            <p class="process-step__desc">
+              Workshops em ambiente seguro: formulação de prompts, criação de assistentes internos e automação guiada passo a passo.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span class="process-step__num">Fase 04</span>
+            <h3 class="process-step__title">Autonomia & Governação</h3>
+            <p class="process-step__desc">
+              Entrega dos manuais internos de prompts, checklists de validação humana e diretrizes de conformidade ética e RGPD.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- EXPLORER SECTION (PAINS & OPPS) -->
+      <section id="setor" class="t-section" aria-labelledby="explorer-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Mapeamento de Realidade</span>
+          <h2 id="explorer-title" class="t-section__title">
+            Dificuldades Operacionais & Oportunidades de Ganho
+          </h2>
+          <p class="t-section__desc">
+            Como a inteligência artificial responde aos gargalos concretos do seu setor de atividade.
+          </p>
+        </header>
+
+        <div class="explorer-grid">
+          <div class="explorer-box explorer-box--pains">
+            <h3 class="explorer-box__title" style="color: #ff9574;">Pontos de Atrito & Dificuldades Atuais</h3>
+            <ul class="bullet-list" data-explorer-pains></ul>
+          </div>
+
+          <div class="explorer-box explorer-box--opps">
+            <h3 class="explorer-box__title" style="color: var(--cyan, #69d8ef);">Oportunidades com IA Aplicada</h3>
+            <ul class="bullet-list" data-explorer-opps></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRACTICAL WORK VISUALIZER -->
+      <section id="casos-praticos" class="t-section" aria-labelledby="practical-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Fluxo Prático & Rigor</span>
+          <h2 id="practical-title" class="t-section__title">
+            Da Tarefa Manual ao Resultado Verificável
+          </h2>
+          <p class="t-section__desc">
+            Cada caso de formação estrutura a ligação inseparável entre o trabalho real, a assistência da IA e a indispensável supervisão humana.
+          </p>
+        </header>
+
+        <div class="practical-container" data-practical-container>
+          <!-- Tabs for 3 use cases -->
+          <div class="practical-tabs" data-practical-tabs></div>
+
+          <!-- Flow Cards -->
+          <div class="practical-flow" data-practical-flow></div>
+
+          <!-- Metadata: Practical Exercise & Validation -->
+          <div class="practical-meta">
+            <div class="practical-meta__box">
+              <h4 class="practical-meta__title">Exercício Desenvolvido em Formação</h4>
+              <p class="practical-meta__content" data-practical-exercise>Carregando...</p>
+            </div>
+            <div class="practical-meta__box">
+              <h4 class="practical-meta__title">Critério de Validação Humana</h4>
+              <p class="practical-meta__content" data-practical-validation>Carregando...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODULES CATALOG -->
+      <section id="modulos" class="t-section" aria-labelledby="modules-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Catálogo Pedagógico</span>
+          <h2 id="modules-title" class="t-section__title">
+            Catálogo de 13 Módulos de Formação
+          </h2>
+          <p class="t-section__desc">
+            Módulos práticos independentes que se combinam à medida dos objetivos e do nível de maturidade da sua equipa.
+          </p>
+        </header>
+
+        <div class="modules-grid" data-modules-grid></div>
+      </section>
+
+      <!-- FORMATS SECTION -->
+      <section id="formatos" class="t-section" aria-labelledby="formats-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Modalidades de Intervenção</span>
+          <h2 id="formats-title" class="t-section__title">
+            Formatos Adaptados à Dinâmica da Sua Empresa
+          </h2>
+          <p class="t-section__desc">
+            Desde workshops executivos de sensibilização até programas imersivos de implementação técnica com acompanhamento contínuo.
+          </p>
+        </header>
+
+        <div class="formats-grid" data-formats-grid></div>
+      </section>
+
+      <!-- SOLUTIONS & AUTOMATIONS SECTION -->
+      <section id="solucoes" class="t-section" aria-labelledby="solutions-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Aplicações Concretas</span>
+          <h2 id="solutions-title" class="t-section__title">
+            Automações & Soluções Possíveis no Seu Setor
+          </h2>
+          <p class="t-section__desc">
+            Exemplos de soluções técnicas que a sua equipa fica capacitada a desenhar, utilizar e manter.
+          </p>
+        </header>
+
+        <div class="explorer-grid">
+          <div class="explorer-box">
+            <h3 class="explorer-box__title" style="color: var(--cyan, #69d8ef);">Fluxos de Automação Possíveis</h3>
+            <ul class="task-list" data-solutions-automations></ul>
+          </div>
+
+          <div class="explorer-box">
+            <h3 class="explorer-box__title" style="color: #9a7bff);">Assistentes & Soluções Especializadas</h3>
+            <ul class="task-list" data-solutions-ai></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRAINER SECTION -->
+      <section id="formador" class="t-section" aria-labelledby="trainer-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Liderança da Formação</span>
+          <h2 id="trainer-title" class="t-section__title">
+            Formador & Responsável Pedagógico
+          </h2>
+        </header>
+
+        <article class="trainer-card">
+          <div>
+            <h3 class="trainer-card__name" data-trainer-name>Miguel Virgílio</h3>
+            <p class="trainer-card__role" data-trainer-role>Creative Technologist & Fundador do MVIRGIL Studio</p>
+            <p class="trainer-card__headline" data-trainer-headline>Tecnologia criativa, inteligência artificial e processos de engenharia com foco no impacto real de negócio.</p>
+            <p class="trainer-card__bio" data-trainer-bio>Bio detalhada do formador...</p>
+          </div>
+          <div>
+            <h4 style="font-size: 0.85rem; color: #fff; margin: 0 0 16px; text-transform: uppercase; letter-spacing: 0.05em;">Credenciais & Abordagem</h4>
+            <ul class="credential-list" data-trainer-credentials></ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- DIAGNOSTIC FORM SECTION -->
+      <section id="diagnostico" class="t-section" aria-labelledby="diagnostic-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Diagnóstico Personalizado</span>
+          <h2 id="diagnostic-title" class="t-section__title">
+            Prepare o Resumo de Necessidades da Sua Empresa
+          </h2>
+          <p class="t-section__desc">
+            Responda às questões sobre a sua organização para gerar instantaneamente um resumo estruturado de proposta com os módulos e exercícios recomendados. 
+            <strong>Processamento estritamente local em memória: nenhum dado é enviado para servidores.</strong>
+          </p>
+        </header>
+
+        <div class="diagnostic-box">
+          <form id="diagnostic-form" data-diagnostic-form novalidate>
+            <!-- Grupo 1: Empresa -->
+            <fieldset class="diagnostic-group">
+              <legend class="diagnostic-group__legend">
+                <span>01</span> Identificação da Empresa
+              </legend>
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="diag-sector">Setor de Atividade *</label>
+                  <select id="diag-sector" name="industryId" class="form-select" required></select>
+                </div>
+                <div class="form-field">
+                  <label for="diag-size">Dimensão da Empresa *</label>
+                  <select id="diag-size" name="companySize" class="form-select" required>
+                    <option value="1-10">Microempresa (1 a 10 colaboradores)</option>
+                    <option value="11-50" selected>Pequena Empresa (11 a 50 colaboradores)</option>
+                    <option value="51-250">Média Empresa (51 a 250 colaboradores)</option>
+                    <option value="250+">Grande Empresa (Mais de 250 colaboradores)</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Grupo 2: Equipa -->
+            <fieldset class="diagnostic-group">
+              <legend class="diagnostic-group__legend">
+                <span>02</span> Equipa Alvo & Maturidade
+              </legend>
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="diag-dept">Departamento a Formar *</label>
+                  <select id="diag-dept" name="department" class="form-select" required></select>
+                </div>
+                <div class="form-field">
+                  <label for="diag-maturity">Nível Atual de Maturidade em IA *</label>
+                  <select id="diag-maturity" name="maturity" class="form-select" required>
+                    <option value="nenhuma">Nenhuma (ainda não utilizamos ferramentas de IA)</option>
+                    <option value="basica" selected>Básica (utilização esporádica e individual de ChatGPT ou similar)</option>
+                    <option value="regular">Regular (uso frequente mas sem métodos estruturados corporativos)</option>
+                    <option value="avancada">Avançada (fluxos integrados e processos automatizados)</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Grupo 3: Necessidades -->
+            <fieldset class="diagnostic-group">
+              <legend class="diagnostic-group__legend">
+                <span>03</span> Objetivos Prioritários & Desafios
+              </legend>
+              <div class="form-field" style="margin-bottom: 16px;">
+                <label>Objetivos Principais da Formação (selecione pelo menos um) *</label>
+                <div class="checkbox-grid" data-objectives-grid></div>
+              </div>
+
+              <div class="form-field">
+                <label for="diag-challenge">Desafio Operacional Principal (opcional, máx. 2.000 carateres)</label>
+                <textarea
+                  id="diag-challenge"
+                  name="challenge"
+                  class="form-textarea"
+                  placeholder="Exemplo: Demoramos muito tempo a preparar orçamentos complexos e a compilar dados de fornecedores..."
+                  maxlength="2000"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">
+                Criar Proposta de Formação <span aria-hidden="true">→</span>
+              </button>
+              <p class="form-note">
+                Prepare um resumo para uma proposta personalizada. Nada é enviado para a rede.
+              </p>
+            </div>
+          </form>
+
+          <!-- Diagnostic Result Box -->
+          <div class="diagnostic-result-box" data-diagnostic-result hidden>
+            <div class="summary-header">
+              <h3 class="summary-title">Resumo de Necessidades de Formação</h3>
+              <button type="button" class="summary-copy-btn" data-copy-summary>
+                Copiar Resumo
+              </button>
+            </div>
+            <textarea
+              class="summary-text-display"
+              data-summary-text
+              readonly
+              aria-label="Resumo gerado de proposta de formação"
+            ></textarea>
+            <p class="form-note" style="margin-top: 10px;">
+              Resumo gerado localmente. Pode copiar este texto e enviar por email para <strong>miguel@mvirgil.com</strong> para receber uma proposta personalizada.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section id="contacto" class="t-section">
+        <div class="final-cta-box">
+          <h2>Transforme o Potencial da Sua Equipa</h2>
+          <p data-cta-text>
+            Estruture um plano de formação adaptado à dimensão e rotina da sua organização.
+          </p>
+          <a class="btn-primary" href="#diagnostico">
+            Iniciar Diagnóstico da Minha Empresa <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div>
+        <p style="margin: 0;">
+          <strong>MVIRGIL STUDIO</strong> — Creative Technology & Corporate AI Training
+        </p>
+        <p style="margin: 4px 0 0; color: #5a7082;">
+          © 2026 MVIRGIL Studio. Todos os direitos reservados.
+        </p>
+      </div>
+      <div>
+        <a href="/" style="margin-right: 20px;">Início Studio</a>
+        <a href="/#disciplines">Disciplinas</a>
+      </div>
+    </footer>
+
+    <!-- Coordinator Script -->
+    <script type="module" src="/src/training/page.ts"></script>
+  </body>
+</html>
