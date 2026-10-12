@@ -855,6 +855,95 @@
   line-height: 1.6;
 }
 
+/* Pedagogical Pillars Grid */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pillar-card {
+  padding: 24px;
+  background: rgba(9, 19, 33, 0.7);
+  border: 1px solid var(--hairline, rgba(144, 184, 205, 0.18));
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar-card__num {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--cyan, #69d8ef);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.pillar-card__title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.pillar-card__desc {
+  font-size: 0.78rem;
+  color: #98aab8;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Portfolio Showcase Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.portfolio-card {
+  padding: 26px;
+  background: linear-gradient(135deg, rgba(10, 20, 35, 0.8) 0%, rgba(7, 14, 25, 0.9) 100%);
+  border: 1px solid var(--hairline, rgba(144, 184, 205, 0.2));
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card__tag {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 4px 10px;
+  background: rgba(105, 216, 239, 0.1);
+  border: 1px solid rgba(105, 216, 239, 0.3);
+  border-radius: 3px;
+  color: #72e4fa;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.portfolio-card__title {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 10px;
+}
+
+.portfolio-card__desc {
+  font-size: 0.82rem;
+  color: #a4b7c6;
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+
+.portfolio-card__tech {
+  margin-top: auto;
+  font-size: 0.72rem;
+  color: #69d8ef;
+  font-family: ui-monospace, Consolas, monospace;
+}
+
 /* Footer */
 .site-footer {
   width: min(1200px, calc(100% - clamp(32px, 7vw, 96px)));
@@ -874,8 +963,13 @@
 
 /* Responsive Media Queries */
 @media (max-width: 960px) {
-  .process-grid {
+  .process-grid,
+  .pillars-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
   }
 
   .practical-flow {
