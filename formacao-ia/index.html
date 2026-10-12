@@ -15,6 +15,12 @@
     />
     <meta property="og:type" content="website" />
     <title>Formação de IA para Empresas — MVIRGIL Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/styles.css" />
     <link rel="stylesheet" href="/src/training/styles.css" />
   </head>
@@ -32,6 +38,7 @@
         <a href="#pilares">Metodologia</a>
         <a href="#processo">Processo</a>
         <a href="#casos-praticos">Casos Práticos</a>
+        <a href="#playground">Simulador</a>
         <a href="#modulos">Módulos</a>
         <a href="#formatos">Formatos</a>
         <a href="#projetos">Soluções B2B</a>
@@ -260,6 +267,77 @@
             <div class="practical-meta__box">
               <h4 class="practical-meta__title">Critério de Validação Humana</h4>
               <p class="practical-meta__content" data-practical-validation>Carregando...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE PROMPT PLAYGROUND / SIMULATOR -->
+      <section id="playground" class="t-section" aria-labelledby="playground-title">
+        <header class="t-section__header">
+          <span class="t-section__eyebrow">Simulador Prático</span>
+          <h2 id="playground-title" class="t-section__title">
+            Laboratório Interativo: Da Instrução ao Resultado Estruturado
+          </h2>
+          <p class="t-section__desc">
+            Experimente em tempo real como um prompt corporativo estruturado transforma dados em minutas operacionais rigorosas, com supervisão humana e controlo de qualidade.
+          </p>
+        </header>
+
+        <div class="playground-card" data-playground-container>
+          <!-- Scenario selector tabs -->
+          <div class="playground-scenarios" role="tablist" aria-label="Cenários de Demonstração">
+            <button class="playground-tab playground-tab--active" type="button" data-scenario="proposta" role="tab" aria-selected="true">
+              <span class="scenario-dot"></span> Proposta Comercial
+            </button>
+            <button class="playground-tab" type="button" data-scenario="fatura" role="tab" aria-selected="false">
+              <span class="scenario-dot"></span> Extração de Faturas PDF
+            </button>
+            <button class="playground-tab" type="button" data-scenario="memoria" role="tab" aria-selected="false">
+              <span class="scenario-dot"></span> Memória Técnica & Risco
+            </button>
+            <button class="playground-tab" type="button" data-scenario="atendimento" role="tab" aria-selected="false">
+              <span class="scenario-dot"></span> Atendimento & Desescalada
+            </button>
+          </div>
+
+          <!-- Dual pane: Prompt Input vs Output -->
+          <div class="playground-workspace">
+            <!-- Left: Prompt Inspector -->
+            <div class="playground-pane playground-pane--input">
+              <div class="pane-header">
+                <span class="pane-tag">ENTRADA / PROMPT OPERACIONAL</span>
+                <span class="pane-metric">Contexto + Restrições</span>
+              </div>
+              <div class="pane-body">
+                <pre class="prompt-code" data-playground-input>Carregando prompt operacional...</pre>
+              </div>
+              <div class="pane-actions">
+                <button type="button" class="btn-playground-run" data-playground-run>
+                  <span class="run-icon">▶</span> Executar Assistente
+                </button>
+                <span class="run-status" data-playground-status>Modelo pronto (LLM Multimodal)</span>
+              </div>
+            </div>
+
+            <!-- Right: Generated Verified Result -->
+            <div class="playground-pane playground-pane--output">
+              <div class="pane-header">
+                <span class="pane-tag">SAÍDA ESTRUTURADA & VERIFICÁVEL</span>
+                <span class="pane-badge" data-playground-badge>Latência: 210ms · 420 tokens</span>
+              </div>
+              <div class="pane-body">
+                <pre class="output-preview" data-playground-output>Clique em "Executar Assistente" para testar o fluxo.</pre>
+              </div>
+              <div class="pane-footer">
+                <div class="validation-gate">
+                  <span class="gate-icon">🛡️</span>
+                  <div>
+                    <strong>Ponto de Controlo Humano:</strong>
+                    <span data-playground-gate>Validação mandatória de valores e condições por responsável antes de qualquer envio.</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

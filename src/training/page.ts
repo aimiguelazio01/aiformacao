@@ -20,6 +20,7 @@ import {
   validateDiagnosticInput,
 } from './diagnostic';
 import { getProfileById, resolveProfile } from './profiles';
+import { initPlayground } from './playground';
 import type { CompanyProfile, DiagnosticInput } from './types';
 
 // Main Application State
@@ -386,6 +387,12 @@ function init(): void {
 
   // Setup diagnostic
   setupDiagnosticForm();
+
+  // Setup interactive playground
+  const playgroundContainer = document.querySelector<HTMLElement>('[data-playground-container]');
+  if (playgroundContainer) {
+    initPlayground(playgroundContainer);
+  }
 
   // Resolve initial profile from URL
   const initialSectorId = getSectorFromUrl();
