@@ -15,7 +15,7 @@ export default defineConfig({
   },
   server: {
     watch: {
-      ignored: ['**/*.png', '**/*.jpg', '**/*.jpeg'],
+      ignored: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.md', '**/miguel-professional-context/**'],
     },
   },
 });
